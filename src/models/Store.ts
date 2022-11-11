@@ -9,7 +9,7 @@ interface IStore {
 }
 
 const storeSchema = new Schema<IStore>({
-  name: { type: String, trim: true, required: "Please enter a store name!" },
+  name: { type: String, trim: true, required: true },
   slug: String,
   description: {
     type: String,
