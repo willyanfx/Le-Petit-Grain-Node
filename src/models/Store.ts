@@ -24,4 +24,5 @@ StoreSchema.pre<IStore>("save", async function (next) {
   // TODO make more resiliant so slugs are unique
 });
 
+export { IStore };
 export default mongoose.model<IStore>("Store", StoreSchema);
